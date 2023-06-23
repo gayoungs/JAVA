@@ -1,0 +1,8 @@
+package jdbc.demo;
+
+public class DemoUpdate01 {
+
+	public static void main(String[] args) {
+		
+	}
+}

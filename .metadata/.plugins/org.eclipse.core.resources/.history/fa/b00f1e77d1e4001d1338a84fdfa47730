@@ -1,0 +1,33 @@
+package day11.inter.basic3;
+
+public class MyAccount extends Account{
+
+	private static String bankName = "우리은행"; //객체들이 모두 동일한 값을 갖는다.
+	
+	public void method01() {
+		System.out.println("오버라이드");
+	}
+	
+	public void info(String name) {
+		System.out.println("~~");
+	}
+	
+	public void info(String name, String ssn) {
+		System.out.println("~~~");
+	}
+	
+	
+	public static String getBankName() {
+						
+		return bankName;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

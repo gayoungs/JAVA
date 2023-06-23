@@ -1,0 +1,28 @@
+package jdbc.demo.mvc;
+
+public class EmployeeDAO {
+	
+	//멤버변수
+	private String url = DBProperties.URL;
+	private String uid = DBProperties.UID;
+	private String upw = DBProperties.UPW;
+	
+	//생성자
+	public EmployeeDAO() {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (Exception e) {
+			System.out.println("CLASS FOR NAME ERR");
+		}
+	}
+	
+	//메서드
+	
+	
+	
+	
+	
+	
+	
+	
+}

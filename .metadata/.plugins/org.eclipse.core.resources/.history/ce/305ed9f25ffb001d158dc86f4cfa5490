@@ -1,0 +1,39 @@
+package jdbc.demo.mvc;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		while(true) {
+			
+			System.out.println("[1.조회, 2.추가, 3.수정]");
+			System.out.print("메뉴>");
+			
+			int menu = scan.nextInt();
+			
+			if(menu == 1) {
+				
+				
+				
+			} else if(menu == 2) {
+				
+			} else if(menu == 3) {
+				
+			} else if(menu == 4) {
+				
+			}
+			
+			
+			
+		}
+	
+		
+		
+		
+	}
+}

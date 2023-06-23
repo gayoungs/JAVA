@@ -1,0 +1,71 @@
+package jdbc.demo.mvc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
+
+public class DeptsDAO {
+	
+	//멤버변수
+	private String url = DBProperties.URL;
+	private String uid = DBProperties.UID;
+	private String upw = DBProperties.UPW;
+	
+	//생성자
+	public DeptsDAO() {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (Exception e) {
+			System.out.println("CLASS FOR NAME ERR");
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	//메서드(데이터베이스 결과가 1행 => VO를 반환
+	//	   데이터베이스 결과가 여러행 => List<VO> 반환 )
+	public List<DeptsVO> getDepts(String name) {
+		
+		String sql = "SELECT * FROM DEPTS WHERE DEPARTMENT_NAME = ?";
+		
+		try  {
+
+			Connection conn = DriverManager.getConnection(url, uid, upw);
+			
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, name);
+			
+			ResultSet rs = pstmt.executeQuery();
+			
+			while(rs.next() ) {
+				
+				int department_id = rs.getInt("department_id");
+				String department_name = rs.getString("department_name");
+				int manaager_id = rs.getInt("manager_id");
+				int location_id = rs.getInt("location_id");
+				
+				System.out.println(department_id);
+				
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return null; 
+	}
+
+	
+	
+	
+	
+	
+	
+	
+}

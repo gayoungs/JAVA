@@ -1,0 +1,16 @@
+import java.sql.DriverManager;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+
+		 String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		 String uid = "HR";
+		 String upw = "HR";
+		
+		System.out.println(DriverManager.getConnection(url, uid, upw)); ;
+		
+		
+	}
+}

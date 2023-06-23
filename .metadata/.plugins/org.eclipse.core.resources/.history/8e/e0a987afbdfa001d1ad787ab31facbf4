@@ -1,0 +1,14 @@
+package jdbc.demo;
+
+public class DemoSelect01 {
+
+	public static void main(String[] args) {
+		
+		//데이터베이스 연결정보
+		String url = "jdbc:oracle:thin:localhost:1521:xe"; //jdbc:oracle:thin:호스트이름:포트번호:DB이름
+		
+		
+		
+		
+	}
+}

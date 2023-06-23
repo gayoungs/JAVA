@@ -1,0 +1,14 @@
+package jdbc.demo;
+
+public class DemoUpdate01 {
+
+	public static void main(String[] args) {
+		
+		//부서아이디, 부서이름을 입력받아서, 해당부서의 이름을 변경하는 update구문
+		
+		
+		
+		
+		
+	}
+}

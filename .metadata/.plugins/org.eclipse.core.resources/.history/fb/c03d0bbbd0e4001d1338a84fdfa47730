@@ -1,0 +1,18 @@
+package day11.inter.basic3;
+
+public class Account {
+
+	String name;
+	
+	Account() {
+	}
+	
+	Account(String name) {
+		this.name = name;
+	}
+	
+	void method01() {
+		
+	}
+	
+}

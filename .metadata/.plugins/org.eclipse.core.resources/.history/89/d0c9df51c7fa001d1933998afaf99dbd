@@ -1,0 +1,15 @@
+package jdbc.demo;
+
+public class DemoInsert01 {
+
+	public static void main(String[] args) {
+		
+		String url = "jdbc:oracle:thin:@localhost:1521:xe"; //jdbc:oracle:thin:호스트이름:포트번호:DB이름
+		String uid = "HR";
+		String upw = "HR";
+		
+		
+		
+		
+	}
+}

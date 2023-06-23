@@ -1,0 +1,21 @@
+package day11.inter.basic3;
+
+public class MyAccount extends Account{
+
+	public void method01() {
+		System.out.println("오버라이드");
+	}
+	
+	void info(String name) {
+		System.out.println("~~");
+	}
+	
+	void info(String name, String ssn) {
+		System.out.println("~~~");
+	}
+	
+	
+	
+	
+	
+}
